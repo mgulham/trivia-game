@@ -1,0 +1,39 @@
+body  {
+    width: 960px;
+    background-image: url(../images/background.jpg);
+    background-size: 100%;
+    height: auto;
+}
+
+.triviaHeaderFont {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: red;
+    padding-right: 100px;
+}
+.mainHeaderHello {
+    position: fixed;
+    top: 30%;
+    left: 30%;
+}
+
+.startButton {
+    margin-left: 200px;
+}   
+
+
+.gameOver {
+    color: red;
+    text-align: center;
+    font-size: 30px;
+}
+
+#countdown {
+    text-align: center;
+    font-size: 50px;
+}
+
+#questions {
+    
+}
