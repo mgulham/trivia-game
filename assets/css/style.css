@@ -35,5 +35,12 @@ body  {
 }
 
 #questions {
-    
+    font-size: 18px;
+    text-align: center;
+}
+
+.endScore {
+    font-style: bold;
+    text-align: center;
+
 }
