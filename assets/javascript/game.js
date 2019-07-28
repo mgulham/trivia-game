@@ -21,6 +21,11 @@ var downloadTimer = setInterval(function(){
     document.getElementById("countdown").innerHTML = "Finished"
     $(".body").append('<div class= "gameOver">YOUR TIME IS UP! Refresh to try again.</div>');
     $("#questions").empty();
+    $("#questions").append(`Correct:${correct},
+    Incorrect:${incorrect},
+     Unanswered:${unanswered},
+     Score:${score}`)
+    
   }
 }, 1000);
 
