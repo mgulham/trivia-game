@@ -1,7 +1,7 @@
 
 var correct = 0  //defining our global variables
 var incorrect = 0
-var timeleft = 120
+var timeleft = 120;
 
 // object that runs function when submit is clicked. Makes sure page doesn't refresh.
 const myForm = document.getElementById("myForm"); 
@@ -137,7 +137,7 @@ var downloadTimer = setInterval(function(){
   if(timeleft < 0){
     clearInterval(downloadTimer);
     document.getElementById("countdown").innerHTML = "Times Up!"
-    $(".body").append('<div class="gameOver"><a href= "file:///C:/Users/Maiwand%20Gulham/Desktop/Coding%20Class/homework/week-5/trivia-game/index.html" style="color: red">The Test is Complete! Click here to try again.</a></div>');
+    $(".body").append('<div class="gameOver"><a href= "https://mgulham.github.io/trivia-game/" style="color: red">The Test is Complete! Click here to try again.</a></div>');
     $("#questions").empty();
     handleClick()
     pushScore();
