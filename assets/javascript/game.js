@@ -1,7 +1,7 @@
 
 var correct = 0  //defining our global variables
 var incorrect = 0
-var timeleft = 5;
+var timeleft = 120;
 
 // object that runs function when submit is clicked. Makes sure page doesn't refresh.
 const myForm = document.getElementById("myForm"); 
