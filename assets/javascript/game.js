@@ -1,7 +1,7 @@
 
 var correct = 0  //defining our global variables
 var incorrect = 0
-var timeleft = 120;
+var timeleft = 90;
 
 // object that runs function when submit is clicked. Makes sure page doesn't refresh.
 const myForm = document.getElementById("myForm"); 
@@ -85,7 +85,8 @@ function handleClick() {
 function pushScore(){
   incorrect = 5 - correct;
   $("#questions").append(`<p class= "endScore">Correct: ${correct}</p>
-      <p class= "endScore">Incorrect: ${incorrect}</p>`)
+      <p class= "endScore">Incorrect: ${incorrect}</p>
+      <div class="gameOver"><a href="https://mgulham.github.io/trivia-game/" target="_self" style="color: red">The Test is Complete! Click here to try again.</a></div>`)
     
 };
 
@@ -137,6 +138,7 @@ var downloadTimer = setInterval(function(){
   if(timeleft < 0){
     clearInterval(downloadTimer);
     document.getElementById("countdown").innerHTML = "Times Up!"
+    $("#.gameOver").empty();
     $(".body").append('<div class="gameOver"><a href="https://mgulham.github.io/trivia-game/" target="_self" style="color: red">The Test is Complete! Click here to try again.</a></div>');
     $("#questions").empty();
     handleClick()
